@@ -34,7 +34,7 @@
             <span style="font-size: 2em; color: #32a5e7;">New Student</span>
         </div>
 
-        <form id="newBookForm" method="post" action="/eregistrar/student/new" th:object="${student}">
+        <form id="newStudentForm" method="post" action="/eregistrar/student/new" th:object="${student}">
             <fieldset>
                 <input type="hidden" name="id" th:value="${student.id}"/>
 
@@ -109,7 +109,7 @@
 
                 <div style="float:right;">
                     <a href="/eregistrar/student/list" class="btn btn-outline-warning">Cancel</a>&nbsp;&nbsp;&nbsp;
-                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Save Book</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Save Student</button>
                 </div>
             </fieldset>
         </form>
@@ -117,7 +117,7 @@
 
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">O. Kalu : : : CS425-SWE</span>
+            <span class="text-muted">Developed by abanoub kaiser : : : CS425-SWE</span>
             <span style="float:right;" class="text-muted">&copy; August 2019</span>
         </div>
     </footer>
